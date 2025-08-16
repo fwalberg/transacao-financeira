@@ -16,7 +16,7 @@ Este projeto é um sistema de transações financeiras desenvolvido como parte d
 ### Arquitetura Atual
 
 O projeto está organizado nos seguintes pacotes:
-
+```
 src/main/java/dio/desafio/
 ├── model/ # Entidades do domínio
 │ ├── AccountWallet.java
@@ -31,7 +31,7 @@ src/main/java/dio/desafio/
 │ └── CommonsRepository.java
 ├── exception/ # Exceções customizadas
 └── App.java # Interface de usuário (console)
-
+```
 ### Fluxo de Uso
 
 1. **Criar Conta**: Configure chaves PIX e valor inicial
@@ -61,6 +61,8 @@ src/main/java/dio/desafio/
 - [ ] Mover regras de negócio dos repositories para services
 
 #### 2. Reestruturar Pacotes
+
+```
 src/main/java/dio/desafio/
 ├── controller/ # Controladores/Handlers
 ├── service/ # Lógica de negócio
@@ -71,6 +73,7 @@ src/main/java/dio/desafio/
 ├── config/ # Configurações
 ├── exception/ # Exceções customizadas
 └── util/ # Utilitários
+```
 
 #### 3. Implementar Injeção de Dependência
 - [ ] Migrar para Spring Framework
