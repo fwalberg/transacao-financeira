@@ -1,7 +1,6 @@
 package dio.desafio.model;
 
 import lombok.Getter;
-import lombok.ToString;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
@@ -9,7 +8,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Stream;
 
-@ToString
 public abstract class Wallet {
 
     @Getter
@@ -67,5 +65,11 @@ public abstract class Wallet {
                 .toList();
     }
 
-
+    @Override
+    public String toString() {
+        return "Wallet{" +
+                "serviceType=" + serviceType +
+                ", money= R$" + money.size() / 100 + "," + money.size() % 100 +
+                '}';
+    }
 }
