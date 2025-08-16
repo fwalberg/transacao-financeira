@@ -23,7 +23,7 @@ public class InvestmentWallet extends Wallet{
     }
 
     public void updateAmount(final long percentage) {
-        var amount = (long) (getFunds() * (percentage / 100.0));
+        var amount = getFunds() * (percentage / 100);
         var history = new MoneyAudit(
                 UUID.randomUUID(),
                 getServiceType(),
